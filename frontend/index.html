@@ -47,7 +47,7 @@
         <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
                 <a href="" class="navbar-brand p-0">
-                    <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>Restoran</h1>
+                    <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>Kevins</h1>
                     <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -62,14 +62,14 @@
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu m-0">
-                                <a href="booking.html" class="dropdown-item">Booking</a>
+                                <a href="location.html" class="dropdown-item">Locations</a>
                                 <a href="team.html" class="dropdown-item">Our Team</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="reviews.html" class="dropdown-item">Reviews</a>
                             </div>
                         </div>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
-                    <a href="" class="btn btn-primary py-2 px-4">Book A Table</a>
+                    <a href="location.html" class="btn btn-primary py-2 px-4">FIND US</a>
                 </div>
             </nav>
 
@@ -79,7 +79,7 @@
                         <div class="col-lg-6 text-center text-lg-start">
                             <h1 class="display-3 text-white animated slideInLeft">Enjoy Our<br>Delicious Meal</h1>
                             <p class="text-white animated slideInLeft mb-4 pb-2">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                            <a href="" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Book A Table</a>
+                            <a href="location.html" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">FIND US</a>
                         </div>
                         <div class="col-lg-6 text-center text-lg-end overflow-hidden">
                             <img class="img-fluid" src="img/hero.png" alt="">
@@ -536,7 +536,17 @@
 
 
         <!-- Reservation Start -->
-        <div class="container-xxl py-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="col-md-6 bg-dark d-flex align-items-center">
+            <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
+                <h5 class="section-title ff-secondary text-start text-primary fw-normal">Come See Us!</h5>
+                <h1 class="text-white mb-4">Upcoming Locations</h1>
+
+                <div id="upcomingLocations" class="text-white">
+                    <!-- Upcoming locations will be dynamically inserted here -->
+                </div>
+                    </div>
+                </div>
+        <!-- <div class="container-xxl py-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
             <div class="row g-0">
                 <div class="col-md-6">
                     <div class="video">
@@ -603,7 +613,6 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <!-- 16:9 aspect ratio -->
                         <div class="ratio ratio-16x9">
                             <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
                                 allow="autoplay"></iframe>
@@ -611,7 +620,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Reservation Start -->
 
 
@@ -685,11 +694,11 @@
         <!-- Team End -->
 
 
-        <!-- Testimonial Start -->
+        <!-- Reviews Start -->
         <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
             <div class="container">
                 <div class="text-center">
-                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Testimonial</h5>
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Reviews</h5>
                     <h1 class="mb-5">Our Clients Say!!!</h1>
                 </div>
                 <div class="owl-carousel testimonial-carousel">
@@ -740,7 +749,7 @@
                 </div>
             </div>
         </div>
-        <!-- Testimonial End -->
+        <!-- Reviews End -->
         
 
         <!-- Footer Start -->
@@ -827,6 +836,8 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/strapiHelper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </body>
 
 </html>

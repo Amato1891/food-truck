@@ -378,6 +378,7 @@ export interface ApiLocationLocation extends Schema.CollectionType {
     locationName: Attribute.String;
     locationAddress: Attribute.String;
     details: Attribute.Text;
+    imageUrl: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
