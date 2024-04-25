@@ -1,2 +1,2 @@
-web: npm start --prefix backend
+web: cd backend && npm install && npm start
 frontend: node server.js
