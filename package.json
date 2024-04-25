@@ -1,0 +1,11 @@
+{
+  "name": "kevinsfoodtruck",
+  "version": "1.0.0",
+  "description": "Website and CMS for Kevins food truck",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jim Amato",
+  "license": "MIT"
+}
