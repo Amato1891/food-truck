@@ -1,7 +1,15 @@
 document.addEventListener('DOMContentLoaded', async function() {
     try {
-        let environment = 'development';
-        let endpoint = environment === 'production' ? 'https://www.produrl.com' : 'http://localhost:1337';
+        // Fetch environment information from server
+        const environmentResponse = await axios.get('/api/environment');
+        const { environment } = environmentResponse.data;
+    
+        // Use environment information as needed
+        console.log('Environment:', environment);
+        
+        // Now you can conditionally set your endpoint URL based on the environment
+        const endpoint = environment === 'production' ? 'https://www.produrl.com' : 'http://localhost:1337';
+    
         const response = await axios.get(`${endpoint}/api/locations`);
         const locations = response.data;
         // console.log(locations)
