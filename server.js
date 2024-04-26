@@ -1,6 +1,8 @@
 const express = require('express');
 const path = require('path');
 const app = express();
+const env = require('dotenv').config();
+const contentful = require('contentful');
 
 // Serve frontend static files
 const frontendPath = path.join(__dirname, 'frontend');
@@ -11,10 +13,29 @@ app.get('/api/environment', (req, res) => {
   res.json({ environment });
 });
 
-// Redirect requests to /admin to Strapi admin page
-app.get('/admin', (req, res) => {
-  const endpoint = process.env.NODE_ENV === 'production' ? 'https://www.produrl.com' : 'http://localhost:1337';
-  res.redirect(`${endpoint}/admin`);
+// Define a route to handle the API call and return the necessary data
+app.get('/api/locations', async (req, res) => {
+    try {
+      const space = process.env.SPACE ? process.env.SPACE : null;
+      const accessToken = process.env.ACCESS_TOKEN ? process.env.ACCESS_TOKEN : null;
+
+        // Initialize the Contentful client
+        const client = contentful.createClient({
+            space,
+            environment: 'master',
+            accessToken
+        });
+
+        // Retrieve entries from Contentful
+        const entries = await client.getEntries();
+
+        // Send the retrieved entries as the response
+        res.json(entries);
+    } catch (error) {
+        // If an error occurs, send an error response
+        console.error('Error fetching locations:', error);
+        res.status(500).json({ error: 'Error fetching locations' });
+    }
 });
 
 // Start server

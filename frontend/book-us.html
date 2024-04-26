@@ -56,31 +56,31 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0 pe-4">
                         <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="book-us.html" class="nav-item nav-link">Book Us</a>
+                        <a href="book-us.html" class="nav-item nav-link active">Book Us</a>
                         <!-- <a href="service.html" class="nav-item nav-link">Service</a> -->
                         <a href="menu.html" class="nav-item nav-link">Menu</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu m-0">
                                 <a href="about.html" class="dropdown-item">About</a>
                                 <a href="team.html" class="dropdown-item">Our Team</a>
-                                <a href="reviews.html" class="dropdown-item active">Reviews</a>
+                                <a href="reviews.html" class="dropdown-item">Reviews</a>
                             </div>
                         </div>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
-                    <a href="location.html" class="btn btn-primary py-2 px-4">FIND US</a>
+                    <a href="location.html" class="btn btn-primary py-2 px-4">Find US</a>
                 </div>
             </nav>
 
             <div class="container-xxl py-5 bg-dark hero-header mb-5">
                 <div class="container text-center my-5 pt-5 pb-4">
-                    <h1 class="display-3 text-white mb-3 animated slideInDown">Reviews</h1>
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">Book Us</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center text-uppercase">
                             <li class="breadcrumb-item"><a href="#">Home</a></li>
                             <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">Reviews</li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Book Us</li>
                         </ol>
                     </nav>
                 </div>
@@ -89,62 +89,90 @@
         <!-- Navbar & Hero End -->
 
 
-        <!-- Reviews Start -->
-        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="container">
-                <div class="text-center">
-                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Reviews</h5>
-                    <h1 class="mb-5">Our Clients Say!!!</h1>
+        <!-- Reservation Start -->
+        <div class="container-xxl py-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="row g-0">
+                <!-- <div class="col-md-6">
+                    <div class="video">
+                        <button type="button" class="btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                            <span></span>
+                        </button>
+                    </div> -->
                 </div>
-                <div class="owl-carousel testimonial-carousel">
-                    <div class="testimonial-item bg-transparent border rounded p-4">
-                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg" style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h5 class="mb-1">Client Name</h5>
-                                <small>Profession</small>
+                <div class="col-12 bg-dark d-flex align-items-center">
+                    <div class="col-12 p-5 wow fadeInUp" data-wow-delay="0.2s">
+                        <h5 class="section-title ff-secondary text-start text-primary fw-normal">Book Us!</h5>
+                        <h1 class="text-white mb-4">We'd Love To Do The Cooking!</h1>
                             </div>
                         </div>
-                    </div>
-                    <div class="testimonial-item bg-transparent border rounded p-4">
-                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg" style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h5 class="mb-1">Client Name</h5>
-                                <small>Profession</small>
+                        <div class = "form-container">
+                        <form class="booking-form">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="date" class="form-control" id="date" placeholder="Date">
+                                        <label for="date">Date</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="time">
+                                            <option value="Afternoon">Afternoon</option>
+                                            <option value="Evening">Evening</option>
+                                            <option value="Night">Night</option>
+                                        </select>
+                                        <label for="time">Time</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="locationName" placeholder="Location Name">
+                                        <label for="locationName">Location Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="locationAddress" placeholder="Location Address">
+                                        <label for="locationAddress">Location Address</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="number" class="form-control" id="guests" placeholder="Estimated Total Number of Guests">
+                                        <label for="guests">Estimated Total Number of Guests</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Additional Information" id="message" style="height: 100px"></textarea>
+                                        <label for="message">Additional Information</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button id="submitBtn" class="btn btn-primary w-100 py-3" type="button">Book Now</button>
+                                </div>
                             </div>
+                        </form>
+                        <div class="after-booking-form-submit" style="display: none;">
+
                         </div>
-                    </div>
-                    <div class="testimonial-item bg-transparent border rounded p-4">
-                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg" style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h5 class="mb-1">Client Name</h5>
-                                <small>Profession</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-transparent border rounded p-4">
-                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-4.jpg" style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h5 class="mb-1">Client Name</h5>
-                                <small>Profession</small>
-                            </div>
-                        </div>
+                    </div>                     
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Reviews End -->
         
 
         <!-- Footer Start -->
@@ -228,9 +256,11 @@
     <script src="lib/tempusdominus/js/moment.min.js"></script>
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/formActions.js"></script>
 </body>
 
 </html>
