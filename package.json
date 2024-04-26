@@ -4,7 +4,7 @@
   "description": "Website and CMS for Kevins food truck",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "author": "Jim Amato",
   "license": "MIT",
